@@ -29,28 +29,45 @@ $(function () {
     });
 
 
-    
-    let bio = $.ajax({
-        url: "ajax/bio.json",
-        method: "GET"
-    }).done(function (data) {
-        let content = "<h1>Projets / Bio</h1>";
-        for (let loop = 0; loop <= data.length - 1; loop++) {
-            if(data[loop].id%2 == 0){
-            let contentPart = "<div class=\"media\" class=\"bg-beige\"><img src=\"" + data[loop].img + "\" class=\"bio-img align-self-center mr-3 img-fluid\" alt=\"\"><div class=\"media-body align-self-center text-justify\"><h5 class=\"mt-0 font-weight-bold\">" + data[loop].title + "</h5><p>" + data[loop].content + "</p></div></div>"
-            content += contentPart}else{
-                let contentPart = "<div class=\"media\" class=\"bg-beige\"><div class=\"media-body align-self-center text-justify\"><h5 class=\"mt-0 font-weight-bold\">" + data[loop].title + "</h5><p>" + data[loop].content + "</p></div><img src=\"" + data[loop].img + "\" class=\"bio-img align-self-center mr-3 img-fluid\" alt=\"\"></div>"
-            content += contentPart
+    // Bio page content
+    function bio() {
+        $.ajax({
+            url: "ajax/bio.json",
+            method: "GET"
+        }).done(function (data) {
+            let content = "<h1>Projets / Bio</h1>";
+            for (let loop = 0; loop <= data.length - 1; loop++) {
+                if (data[loop].id % 2 == 0) {
+                    let contentPart = "<div class=\"media\" class=\"bg-beige\"><img src=\"" + data[loop].img + "\" class=\"bio-img align-self-center mr-3 img-fluid\" alt=\"\"><div class=\"media-body align-self-center text-justify\"><h5 class=\"mt-0 font-weight-bold\">" + data[loop].title + "</h5><p>" + data[loop].content + "</p></div></div>"
+                    content += contentPart
+                } else {
+                    let contentPart = "<div class=\"media\" class=\"bg-beige\"><div class=\"media-body align-self-center text-justify\"><h5 class=\"mt-0 font-weight-bold\">" + data[loop].title + "</h5><p>" + data[loop].content + "</p></div><img src=\"" + data[loop].img + "\" class=\"bio-img align-self-center mr-3 img-fluid\" alt=\"\"></div>"
+                    content += contentPart
+                }
             }
-        }
-        $("#pageBody").html(content);
-    });
+            $("#pageBody").html(content);
+        });
+    }
+    bio();
 
 
+    // Cosplay page content
+    function cosplay() {
+        $.ajax({
+            url: "ajax/lichKing.json",
+            method: "GET"
+        }).done(function (data) {
+            $("#pageBody").html("<h1>Cosplay</h1><div id=\"gallery\" class=\"row\">")
+            for (let loop = 0; loop <= data.length - 1; loop++) {
+                $("#gallery").append("<div class=\"col-lg-3 col-md-4 col-xs-6 thumb\"><a href=\"" + data[loop].link + "\" class=\"fancybox\" rel=\"ligthbox\"><img src=\"" + data[loop].link + "\"class=\"zoom img-fluid\" alt=\"\"></a></div>")
+            }
+        });
+    }
 
     // Load content with navlinks
     $("#bio").on("click", function () {
-        $("#pageBody").html(bio);
+        bio();
+
     })
 
     $("#news").on("click", function () {
@@ -62,12 +79,24 @@ $(function () {
     })
 
     $("#cosplay").on("click", function () {
-        $("#pageBody").html("<h1>Cosplay</h1>")
+        cosplay();
     })
 
+    // Cosplay Gallery
+    $(document).ready(function () {
+        $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+        });
 
+        $(".zoom").hover(function () {
 
+            $(this).addClass('transition');
+        }, function () {
 
+            $(this).removeClass('transition');
+        });
+    });
 
 
 
