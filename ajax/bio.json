@@ -1,0 +1,25 @@
+[{
+        "id": "1",
+        "title": "En Bref",
+        "content": "Je suis Thomas Hermant, aka Cleyam, et bienvenue sur mon site ! Je suis né en 1994 et entretient depuis tout jeune l'amour des jeux vidéos et du web, au point d'aujourd'hui souhaiter en faire ma profession, en tant que Développeur Web, voir développeur de jeux vidéos. Je suis également un friand consommateur de contenus vidéos sur internet, et notamment sur Twitch, plateforme sur laquelle je live moi-même quand j'en ai l'occasion, en postant mes rediffusions sur Youtube. Je suis également créateur débutant de costumes de cosplay, et j'aime beaucoup lire et écrire, ainsi que pratiquer le jeu de rôle, que ce soit en ligne ou sur table.",
+        "img": "libs/img/logo.png"
+    },
+    {
+        "id": "2",
+        "title": "Développement Web & Web Mobile",
+        "content": "Encore en formation à l'heure actuelle, je me destine toutefois à me reconvertir professionnellement dans le milieu du dévelopemment de sites web, après un cursus scolaire orienté vers les lettres et la communication et quelques passées dans un boulot de vendeur. Ce site en lui-même est d'ailleurs le projet fil rouge de cette formation, et sera amené à connaitre pas mal d'évolutions au fil des mois, au fur et à mesure de ma montée en compétences. Vous pourrez retrouver, si vous le souhaitez, les projets que je garde publics sur mon <a href=\"https://github.com/Cleyam\">GitHub</a>, voir à l'avenir sur ce site directement.<br>Il y a fort à parier également que je parle pas mal de mes projets dans les news du site, ainsi que de ma progression dans ce domaine.",
+        "img": "libs/img/dev.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Twitch",
+        "content": "Je ne suis pas aussi souvent en live que je le voudrai, hélas ! La faute à une connexion internet trop peu performante, comme on sait encore si bien les faire en France ! Néanmoins, il m'arrive tout de même d'animer des livees de temps à autre, toujours dans une ambiance calme et détendue. Vous pourrez principalement me retrouver sur des jeux narratifs, comme par exemple les productions de Telltale Games, des jeux de stratégie et de gestion, ainsi que des RPG et MMORPG. Ce sont ces derniers qui souffrent le plus de ma mauvaise connexion, mais soyez assuré que dès que ce sera réglé, il y aura du let's play en cascade !<br>N'hésitez pas quoi qu'il en soit à venir follow ma chaîne <a href=\"https://www.twitch.tv/cleyam\">Twitch</a>, ou à consulter les rediffusions de lives sur <a href=\"https://www.youtube.com/channel/UCSpBqkTtg0Jas28X5OK8F9w?view_as=subscriber\">Youtube</a> ! ",
+        "img": "libs/img/twitch.png"
+    },
+    {
+        "id": "4",
+        "title": "Cosplay",
+        "content": "Je me suis mis au cosplay vers fin 2018, d'abord davantage comme assistant de ma mère, que j'ai aidé dans une moindre mesure à fabriquer mon costume de The Knight dans le jeu vidéo Hollow Knight, ainsi que son costume de Fumikage Tokoyami, du manga Boku no Hero Academia. Nous les avons porté à l'occasion de la Japan Expo 2019, expérience qui nous a beaucoup amusé, si bien que j'ai décidé de fabriquer moi-même mon cosplay dans l'optique de la prochaine convention à laquelle je pourrai participer. Vous trouverez sur ce site l'avancée de mes costumes en cours, ainsi que des galeries d'images, voir des tutoriels.<br> Il est bon de noter que je poste en premier lieu l'avancée des costumes sur mes réseaux, ainsi n'hésitez pas à me suivre sur <a href=\"https://twitter.com/Itsmecleyam\">Twitter</a> et sur <a href=\"https://www.instagram.com/cleyam/?hl=fr\">Instagram</a>.",
+        "img": "libs/img/cosplay.jpg"
+    }
+]

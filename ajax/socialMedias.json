@@ -1,0 +1,31 @@
+[{
+        "id": "1",
+        "name": "Twitter",
+        "link": "https://twitter.com/Itsmecleyam",
+        "icon": "fab fa-twitter"
+    },
+    {
+        "id": "2",
+        "name": "Youtube",
+        "link": "https://www.youtube.com/channel/UCSpBqkTtg0Jas28X5OK8F9w?view_as=subscriber",
+        "icon": "fab fa-youtube"
+    },
+    {
+        "id": "3",
+        "name": "Twitch",
+        "link": "https://www.twitch.tv/cleyam",
+        "icon": "fab fa-twitch"
+    },
+    {
+        "id": "4",
+        "name": "Instagram",
+        "link": "https://www.instagram.com/cleyam/?hl=fr",
+        "icon": "fab fa-instagram"
+    },
+    {
+        "id": "5",
+        "name": "Discord",
+        "link": "https://discord.gg/kmzd8kN",
+        "icon": "fab fa-discord"
+    }
+]
