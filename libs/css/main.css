@@ -23,6 +23,11 @@ a:hover{
     background-color: #F0E1B9FF;
 }
 
+.gallery-img{
+    width: 100%;
+    height: 400px;
+}
+
 #logoFullSize, #logoMobile {
     max-height: 200px;
 }
@@ -44,15 +49,15 @@ a.socialIcon:hover {
     color: black;
 }
 
-#indexBody,#newsBody,#streamBody,#cosplayBody {
+#indexBody,#newsBody,#streamBody,#cosplayBody, #portfolioBody {
     margin-top: 20px;
 }
 
-.twitterFeed, #indexBody,#newsBody,#streamBody,#cosplayBody {
+.twitterFeed, #indexBody,#newsBody,#streamBody,#cosplayBody, #portfolioBody,.gallery-img {
     padding: 15px;
 }
 
-#menuNav, #indexBody,#newsBody,#streamBody,#cosplayBody {
+#menuNav, #indexBody,#newsBody,#streamBody,#cosplayBody, #portfolioBody {
     border: 2px solid black;
 }
 
@@ -67,6 +72,18 @@ p, .socialIcon {
 
 .media {
     margin-bottom: 20px;
+}
+
+.twitchLogoDiv{
+    width: 280px;
+    height: 130px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.twitchLogo{
+    font-size: 40px;
+    color: #cca73b;
 }
 
 /* TAILLE TELEPHONE */

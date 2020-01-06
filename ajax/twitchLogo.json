@@ -1,0 +1,19 @@
+[{
+  "id": "1",
+  "link": "https://www.twitch.tv/products/cleyam",
+  "iconClass": "fab fa-twitch",
+  "value": "S'abonner"
+},
+  {
+    "id": "2",
+    "link": "https://www.twitch.tv/bits",
+    "iconClass": "fas fa-gift",
+    "value": "Donation"
+  },
+  {
+    "id": "3",
+    "link": "https://www.twitch.tv/cleyam/videos",
+    "iconClass": "fas fa-video",
+    "value": "Rediffusions"
+  }
+]
