@@ -54,7 +54,7 @@ $(function () {
     $("#portfolioBody").html("<h1>Portfolio</h1>");
 
     // Stream page content
-    $("#streamBody").html("<h1>Twitch</h1><div class='row'><div class='col-12 col-md-8'><iframe src=\"https:\/\/player.twitch.tv\/?channel=cleyam\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" height=\"450px\" width=\"100%\"></iframe></div><div class='col-12 col-md-4'><iframe src=\"https:\/\/www.twitch.tv\/embed\/cleyam\/chat\" frameborder=\"0\" scrolling=\"no\" height=\"450px\" width=\"100%\"></iframe></div></div><div id=\"twitchButtons\" class=\"bg-beige row text-center py-auto justify-content-around\"></div>");
+    $("#streamBody").html("<h1>Twitch</h1><div class='row'><div class='col-12 col-md-8 streamEmbed'><iframe src=\"https:\/\/player.twitch.tv\/?channel=cleyam\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" height=\"100%\" width=\"100%\"></iframe></div><div class='col-12 col-md-4 streamEmbed'><iframe src=\"https:\/\/www.twitch.tv\/embed\/cleyam\/chat\" frameborder=\"0\" scrolling=\"no\" height=\"100%\" width=\"100%\"></iframe></div></div><div id=\"twitchButtons\" class=\"bg-beige row text-center py-auto justify-content-around\"></div>");
     $.ajax({
                url: "/Cleyam/ajax/twitchLogo.json",
                method: "GET"

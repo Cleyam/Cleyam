@@ -70,20 +70,24 @@ p, .socialIcon {
     font-size: 20px;
 }
 
-.media {
+.media, .twitchLogoDiv {
     margin-bottom: 20px;
 }
 
 .twitchLogoDiv{
     width: 280px;
     height: 130px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 15px;
 }
 
 .twitchLogo{
     font-size: 40px;
     color: #cca73b;
+}
+
+.streamEmbed{
+    padding: 10px;
 }
 
 /* TAILLE TELEPHONE */
@@ -95,16 +99,33 @@ p, .socialIcon {
     #logoMobile {
         display: block;
     }
+    .streamEmbed{
+        height: 325px;
+        padding: 0;
+    }
 }
 
 /* TAILLE IPAD */
 
-@media (min-width: 576px) and (max-width: 770px) {}
+@media (min-width: 576px) and (max-width: 770px) {
+    .streamEmbed{
+        height: 425px;
+        padding: 0;
+    }
+}
 
 /* TAILLE ECRAN MOYEN */
 
-@media (min-width: 771px) and (max-width: 991px) {}
+@media (min-width: 771px) and (max-width: 991px) {
+    .streamEmbed{
+        height: 425px;
+    }
+}
 
 /* TAILLE ECRAN GRAND */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .streamEmbed{
+        height: 625px;
+    }
+}
